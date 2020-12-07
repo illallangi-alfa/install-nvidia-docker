@@ -1,0 +1,8 @@
+---
+install_nvidia_docker_packages:
+  raspbian: &raspbian
+  debian: &debian
+    - name: "nvidia-container-toolkit"
+    - name: "nvidia-container-runtime"
+  debian_armv7l: *raspbian
+  debian_x86_64: *debian
